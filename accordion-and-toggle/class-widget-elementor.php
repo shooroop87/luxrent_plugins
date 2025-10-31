@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-class WeDesignTech_Widget_Elementor_Testimonial extends WeDesignTech_Elementor_Widget_Base {
+class WeDesignTech_Widget_Elementor_Accordion_And_Toggle extends WeDesignTech_Elementor_Widget_Base {
 
 	public $widget_type;
 	private $widget_path;
@@ -13,7 +13,7 @@ class WeDesignTech_Widget_Elementor_Testimonial extends WeDesignTech_Elementor_W
 
 		$this->widget_type = 'elementor';
 		$this->widget_path = dirname( __FILE__ );
-        $this->widget_base = wedesigntech_widget_base_testimonial();
+        $this->widget_base = wedesigntech_widget_base_accordion_and_toggle();
 
 		parent::__construct( $data, $args );
 
@@ -86,4 +86,4 @@ class WeDesignTech_Widget_Elementor_Testimonial extends WeDesignTech_Elementor_W
 }
 
 
-wedesigntech_elementor_get_elementor_widgets_manager()->register( new WeDesignTech_Widget_Elementor_Testimonial() );
+wedesigntech_elementor_get_elementor_widgets_manager()->register( new WeDesignTech_Widget_Elementor_Accordion_And_Toggle() );

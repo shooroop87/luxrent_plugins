@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-class WeDesignTech_Widget_Shortcode_Testimonial {
+class WeDesignTech_Widget_Shortcode_Accordion_And_Toggle {
 
 	public $widget_type;
 	private $widget_path;
@@ -14,7 +14,7 @@ class WeDesignTech_Widget_Shortcode_Testimonial {
 
 		$this->widget_type = 'shortcode';
 		$this->widget_path = dirname( __FILE__ );
-        $this->widget_base = wedesigntech_widget_base_testimonial();
+        $this->widget_base = wedesigntech_widget_base_accordion_and_toggle();
 
 		$this->set_shortcode_slug();
 		add_action( 'wedesigntech_elementor_register_shortcodes', array( $this, 'register_shortcode' ) );
@@ -81,4 +81,4 @@ class WeDesignTech_Widget_Shortcode_Testimonial {
 
 }
 
-//new WeDesignTech_Widget_Shortcode_Testimonial();
+//new WeDesignTech_Widget_Shortcode_Accordion_And_Toggle();
